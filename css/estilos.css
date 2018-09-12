@@ -188,11 +188,46 @@ body{
 /* css de Retratos*/
 
 .paisajes{
-  background-color: #82c3a6;
+  background-color: #d5c75f;
   margin-top: -16px;
   display: flex;
   flex-direction: row;
   width: 100%;
+  padding-bottom: 5px;
+}
+
+.paisajes #pai1 {
+    -webkit-filter:blur(10px);
+    filter:blur(10px);
+}
+
+.paisajes #pai2 {
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+}
+
+.paisajes #pai3 {
+    -webkit-filter:sepia(90%);
+    filter:sepia(90%);
+}
+
+.paisajes1 #pai4,#pai6 {
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+}
+
+.paisajes1 #pai4,#pai6 {
+    -webkit-filter:grayscale(100%);
+    filter:grayscale(100%);
+}
+
+.paisajes1{
+  background-color: #d5c75f;
+  margin-top: -18px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom:18px;
 }
 
 .paisajes div {
@@ -202,6 +237,15 @@ body{
 .paisajes img{
   width: 100%;
 }
+
+.paisajes1 div {
+  width: 33%;
+}
+
+.paisajes1 img{
+  width: 100%;
+}
+
 
 /*Capa de renderizacion para moviles*/
 @media (max-width:420px){
@@ -222,6 +266,8 @@ body{
   /*Pagina Paisajes*/
   .paisajes{ display: block; flex-direction: row; width: 100%;}
   .paisajes div{width: 100%}
+  .paisajes1{ display: block; flex-direction: row; width: 100%;dpadding-bottom: 10px;}
+  .paisajes1 div{width: 100%}
   #pai1{margin-top:15px;}
   #pai4{margin-top:15px;}
 }
@@ -246,6 +292,8 @@ body{
   /*Pagina Paisajes*/
   .paisajes{ display: block; flex-direction: row; width: 100%;}
   .paisajes div{width: 100%}
+  .paisajes1{ display: block; flex-direction: row; width: 100%;dpadding-bottom: 10px;}
+  .paisajes1 div{width: 100%}
   #pai1{margin-top:15px;}
   #pai4{margin-top:15px;}
 }
