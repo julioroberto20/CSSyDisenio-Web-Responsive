@@ -90,6 +90,7 @@ body{
 }
 
 #img2{
+  width: 90%;
   box-shadow: 2px 2px #02010a;
   border:2px solid black;
   -webkit-transition: -webkit-transform 1s ease-out;
@@ -105,6 +106,7 @@ body{
 }
 
 #img3{
+  width: 90%;
   box-shadow: 2px 2px #02010a;
   border:2px solid black;
   -webkit-transition: -webkit-transform 1s ease-out;
@@ -142,7 +144,7 @@ body{
 }
 
 .finalcontenido .columna1 {
-  margin-left: 10px;
+  margin-left: 20px;
   width: 25%;
 }
 
@@ -150,6 +152,17 @@ body{
   margin-left: 10px;
   width: 25%;
   vertical-align: top;
+}
+
+.finalcontenido .columna3 {
+  margin-left: 10px;
+  width: 25%;
+  vertical-align: top;
+}
+
+.finalcontenido .columna3 a{
+  text-decoration: none;
+  color:black;
 }
 
 .finalcontenido #C1Encabezado {
@@ -160,6 +173,34 @@ body{
 .finalcontenido #C2Encabezado {
   font-size: 5vh;
   font-weight: 700;
+}
+
+.finalcontenido #C3Encabezado {
+  font-size: 5vh;
+  font-weight: 700;
+}
+
+.finalcontenido #C4Encabezado {
+  font-size: 5vh;
+  font-weight: 700;
+}
+
+/* css de Retratos*/
+
+.paisajes{
+  background-color: #82c3a6;
+  margin-top: -16px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.paisajes div {
+  width: 33%;
+}
+
+.paisajes img{
+  width: 100%;
 }
 
 /*Capa de renderizacion para moviles*/
@@ -173,10 +214,21 @@ body{
   #imgsecundaria{width: 100%;display:block;  flex-direction: column;}
   .contenido #imgsecundaria .image2{width: 100%;}
   .contenido #imgsecundaria .image3{width: 100%;}
+  .finalcontenido{display: flex; flex-direction: column; width: 100%;}
+  .finalcontenido .columna1{margin-left: 50px; width: 100%;}
+  .finalcontenido .columna2{margin-left: 50px; width: 100%;}
+  .finalcontenido .columna3{margin-left: 50px; width: 100%;}
+  .finalcontenido .columna4{margin-left: 50px; width: 100%;}
+  /*Pagina Paisajes*/
+  .paisajes{ display: block; flex-direction: row; width: 100%;}
+  .paisajes div{width: 100%}
+  #pai1{margin-top:15px;}
+  #pai4{margin-top:15px;}
 }
 
 /*Capa de renderizacion para tabletas*/
 @media (min-width:421px) and (max-width:900px){
+  /*Pagina Index */
   #encabezado{display:block;}
   #encabezado h1{display: block; text-align: center;}
   #encabezado nav{position: relative;  display: flex; justify-content: center; align-items: center; }
@@ -186,6 +238,16 @@ body{
   #imgsecundaria{width: 100%;display:block;  flex-direction: column;}
   .contenido #imgsecundaria .image2{width: 100%;}
   .contenido #imgsecundaria .image3{width: 100%;}
+  .finalcontenido{display: flex; flex-direction: column; width: 100%;}
+  .finalcontenido .columna1{margin-left: 50px; width: 100%;}
+  .finalcontenido .columna2{margin-left: 50px; width: 100%;}
+  .finalcontenido .columna3{margin-left: 50px; width: 100%;}
+  .finalcontenido .columna4{margin-left: 50px; width: 100%;}
+  /*Pagina Paisajes*/
+  .paisajes{ display: block; flex-direction: row; width: 100%;}
+  .paisajes div{width: 100%}
+  #pai1{margin-top:15px;}
+  #pai4{margin-top:15px;}
 }
 
 /*Capa de renderizacion para pcs*/
