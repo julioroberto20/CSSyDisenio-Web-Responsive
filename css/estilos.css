@@ -1,0 +1,232 @@
+@font-face{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+}
+
+body{
+  font-family: Dancing Script;
+  background-color:black;
+}
+
+.inicio{
+  animation: slidein 2s;
+}
+/*Cabecera de la pagina */
+#encabezado{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  padding:30px;
+}
+#encabezado h1{
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  display: inline;
+}
+
+/*Menu*/
+#encabezado nav{
+    display: inline;
+}
+#encabezado ul {
+  float: right;
+  list-style-type: none;
+  overflow: hidden;
+  display: inline;
+}
+#encabezado ul li {
+  display: inline;
+  margin: 0px 5px;
+  background-color: #5b7989;
+}
+#encabezado ul li a{
+  text-decoration: none;
+  transform: background 2s;
+  -webkit-transform:background 2s;
+  -moz-transform:background 2s;
+  -web-transform:background 2s;
+  background-color:#5b7989;
+  color:white;
+  font-weight: 700;
+  font-size: 3vh;
+}
+#encabezado ul li a:hover{
+  background-color: skyblue;
+  border-radius: 5px 5px 5px 5px;
+  color:black;
+}
+
+/*Imagen Central*/
+.contenido{
+  background-color: #82c3a6;
+  margin-top: -15px;
+}
+.contenido #img1{
+  box-shadow: 2px 2px #02010a;
+  width: 900px;
+}
+.contenido img {
+  display:block;
+  margin:auto;
+}
+.contenido #imgprincipal {
+  padding:20px 20px 20px 20px;
+}
+
+/*Imagen Secundaria*/
+#imgsecundaria{
+  display: flex;
+  flex-direction: row;
+  background-color: #d5c75f;
+  border: 1px solid black;
+}
+
+.contenido #imgsecundaria .image2 {
+  width: 50%;
+}
+
+
+.contenido #imgsecundaria .image3{
+  width: 50%;
+}
+
+#img2{
+  box-shadow: 2px 2px #02010a;
+  border:2px solid black;
+  -webkit-transition: -webkit-transform 1s ease-out;
+  -moz-transition: -moz-transform 1s ease-out;
+  transition: transform 1s ease-out;
+}
+
+#img2:hover{
+  box-shadow: 2px 2px #82c3a6;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+#img3{
+  box-shadow: 2px 2px #02010a;
+  border:2px solid black;
+  -webkit-transition: -webkit-transform 1s ease-out;
+  -moz-transition: -moz-transform 1s ease-out;
+  transition: transform 1s ease-out;
+}
+
+#img3:hover{
+  box-shadow: 2px 2px #82c3a6;
+  -webkit-transform:  translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.contenido figcaption{
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 3vh;
+}
+
+/*Footer*/
+#final{
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+
+}
+
+.finalcontenido{
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5vh;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.finalcontenido .columna1 {
+  margin-left: 10px;
+  width: 25%;
+}
+
+.finalcontenido .columna2 {
+  margin-left: 10px;
+  width: 25%;
+  vertical-align: top;
+}
+
+.finalcontenido #C1Encabezado {
+  font-size: 5vh;
+  font-weight: 700;
+}
+
+.finalcontenido #C2Encabezado {
+  font-size: 5vh;
+  font-weight: 700;
+}
+
+/*Capa de renderizacion para moviles*/
+@media (max-width:420px){
+  #encabezado{display:block;}
+  #encabezado h1{display: block; text-align: center;}
+  #encabezado nav{text-align: center;  margin:0px;}
+  #encabezado nav ul{float:none; text-align: center;}
+  .contenido #img1 {width: 100%;}
+  .contenido #imgprincipal { padding:5px 0px 0px 0px; }
+  #imgsecundaria{width: 100%;display:block;  flex-direction: column;}
+  .contenido #imgsecundaria .image2{width: 100%;}
+  .contenido #imgsecundaria .image3{width: 100%;}
+}
+
+/*Capa de renderizacion para tabletas*/
+@media (min-width:421px) and (max-width:900px){
+  #encabezado{display:block;}
+  #encabezado h1{display: block; text-align: center;}
+  #encabezado nav{position: relative;  display: flex; justify-content: center; align-items: center; }
+  #encabezado nav ul{float:none; text-align: center;}
+  .contenido #img1 {width: 100%;}
+  .contenido #imgprincipal { padding:5px 0px 0px 0px; margin:0px; }
+  #imgsecundaria{width: 100%;display:block;  flex-direction: column;}
+  .contenido #imgsecundaria .image2{width: 100%;}
+  .contenido #imgsecundaria .image3{width: 100%;}
+}
+
+/*Capa de renderizacion para pcs*/
+@media (min-width:901px){
+
+}
+
+/*Animacion de carga de pagina*/
+@-webkit-keyframes slidein{
+  0%   {margin-top: 150%;}
+  60%  {margin-top:  -5%;}
+  100% {margin-top:   0%;}
+}
+
+/*Animacion de imagenes no las use porque eran lentas*/
+@-webkit-keyframes imagen2-animacion{
+  50%  {
+    -webkit-transform: rotate(10deg);
+    -moz-transform:rotate(10deg);
+    -web-transform:rotate(10deg);
+    transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -web-transform:rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes imagen3-animacion {
+	0% {
+		position: relative;
+		left: 0px
+	}
+	50% {
+		position: relative;
+		left: 20px;
+	}
+	100% {
+		position: relative;
+		left: 0px;
+	}
+}

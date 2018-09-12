@@ -1,10 +1,65 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
+    <!--Definicion de la cabecera HTML-->
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="author" content="Julio Roberto Cordon">
+    <meta name="keywords" content="Fotografia, Principiantes, Imagenes">
+    <title>Comenzando con la Fotografía</title>
+    <!--Referencia a la hoja de estilos externa-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Referencia WEB a la tipografia del sitio-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
   </head>
   <body>
+    <!--Div contenedor para la animacion-->
+    <div class="inicio">
+      <!--Encbezado de la pagina-->
+      <header id="encabezado">
+        <h1 >Comenzando con los Retratos</h1>
+        <!--Menu de navegacion alieado a la derecha via CSS-->
+        <nav id="menu">
+            <ul>
+              <li class="opcion1"><a href="index.html">Inicio</a></li>
+              <li class="opcion2"><a href="paisajes.html">Paisajes</a></li>
+              <li class="opcion3"><a href="retratos.html">Retratos</a></li>
+            </ul>
+        </nav>
+      </header>
 
+      <!--Cuerpo o contenido de la pagina web-->
+      <div class="contenido">
+        <div id="imgprincipal">
+          <figure>
+            <img id="img1"src="imagenes/imagen1.jpg" alt="Imangen Principal" >
+          </figure>
+        </div>
+        <div id="imgsecundaria">
+          <div class="image2">
+            <figure>
+              <img id="img2" src="imagenes/imagen2.jpg" alt="Imagen 2" width="90%">
+              <figcaption><a href="paisajes.html">Paisajes</a></figcaption>
+            </figure>
+          </div>
+          <div class="image3">
+            <figure>
+              <img id="img3" src="imagenes/imagen3.jpg" alt="Imagen 3" width="90%">
+              <figcaption><a href="retratos.html">Retratos</a></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <!--Final del documento html-->
+      <footer id="final"
+        <div class="finalcontenido">
+          <div class="columna1"><p id="C1Encabezado">Contacto</p>  <a href="mailto:julioroberto20@gmail.com?subject=Contacto desde la pagina web">julioroberto20@gmail.com</a> <p>9a Calle 10-30 Zona 4</p> <p>(502)3134-6385</p> </div>
+          <div class="columna2"><p id="C2Encabezado">T&eacute;rminos</p>  <p>Para uso exclusivo Next U</p> </div>
+          <div class="columna3"><p id="C2Encabezado">Redes Sociales</p>  <a href="https://www.facebook.com/roberto.cordonarevalo" target="_blank"> <img src="imagenes/facebook.png" alt="Facebook" width="24">   Facebook </a> <br> <a href="https://www.facebook.com/roberto.cordonarevalo" target="_blank"> <img src="imagenes/twitter.png" alt="Facebook" width="24">   Twitter </a></div>
+          <div class="columna4"></div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
